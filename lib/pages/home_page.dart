@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               onNotification: (scrollNotification) {
                 if (scrollNotification is ScrollUpdateNotification &&
                     scrollNotification.depth == 0) {
-                  //滚动且是列表滚动的时候
+                  // 滚动且是列表滚动的时候，只监听第0个元素，不监听Swiper的滚动变化
                   _onScroll(scrollNotification.metrics.pixels);
                 }
               },
