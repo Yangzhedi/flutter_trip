@@ -10,6 +10,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
+// 最大滚动距离，滚动超过100 完全透明
 const APPBAR_SCROLL_OFFSET = 100;
 
 class HomePage extends StatefulWidget {
